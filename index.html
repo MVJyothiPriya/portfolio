@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venkata Jyothi Priya Mulaka | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+  <nav>
+    <ul>
+      <li><button onclick="scrollToSection('about')">About</button></li>
+      <li><button onclick="scrollToSection('experience')">Experience</button></li>
+      <li><button onclick="scrollToSection('education')">Education</button></li>
+      <li><button onclick="scrollToSection('projects')">Projects</button></li>
+      <li><button onclick="scrollToSection('certifications')">Certifications</button></li>
+      <li><button onclick="scrollToSection('skills')">Skills</button></li>
+      <li><button onclick="scrollToSection('contact')">Contact</button></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- Main -->
+  <div class="container">
+
+    <!-- About -->
+<div class="card" id="about">
+  <div class="profile">
+    <img src="profile.jpg" alt="Venkata Jyothi Priya Mulaka">
+    <div class="about-text">
+      <h1>Venkata Jyothi Priya Mulaka</h1>
+      <h3 class="role">AI & Machine Learning Engineer</h3>
+      <p>I’m an AI, Machine Learning, and Data Engineering enthusiast who thrives on turning raw data into real-world impact. As a master’s student in Applied Data Science at the University of Florida, I love bridging the gap between theory and practical solutions — from designing machine learning models to deploying them at scale. My curiosity drives me to explore how intelligent systems can make everyday decisions smarter, faster, and fairer. I see every dataset as a story waiting to be told, and every model as a chance to build something meaningful and responsible.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Experience -->
+<div class="card" id="experience">
+  <h2>Work Experience</h2>
+
+  <!-- University of Florida -->
+  <div class="experience-entry">
+    <h3>Graduate Student Assistant</h3>
+    <p><em>University of Florida, Gainesville, FL (Apr 2025 – Present)</em></p>
+    <ul>
+      <li>Developed and deployed end-to-end machine learning pipelines in Microsoft Azure ML covering data preprocessing, model training, evaluation, and cloud deployment.</li>
+      <li>Designed guided lessons and labs for undergraduate learners in South Carolina, focusing on Azure ML workflows, dataset transformation, and automated model deployment.</li>
+      <li>Integrated Azure SQL and Power BI to demonstrate live data ingestion, transformation, and visualization for real-time analytics.</li>
+      <li>Conducted workshops on building interactive Power BI dashboards using bar charts, scatter plots, cards, and slicers, emphasizing insight-driven storytelling.</li>
+    </ul>
+  </div>
+
+  <!-- Soul AI -->
+  <div class="experience-entry">
+    <h3>AI Project Expert</h3>
+    <p><em>Soul AI (Virtual) (Oct 2023 – Dec 2023)</em></p>
+    <ul>
+      <li>Led prompt engineering initiatives to improve language model accuracy, contextual understanding, and factual consistency.</li>
+      <li>Promoted to an evaluation specialist role under the Reinforcement Learning from Human Feedback (RLHF) framework, providing structured assessments to optimize model responses.</li>
+      <li>Contributed to LLM fine-tuning by designing evaluation rubrics and improving reward signal alignment across multiple dialogue tasks.</li>
+    </ul>
+  </div>
+
+  <!-- Salesforce -->
+  <div class="experience-entry">
+    <h3>Software Engineer Intern</h3>
+    <p><em>Salesforce (Virtual) (Apr 2023 – May 2023)</em></p>
+    <ul>
+      <li>Developed and customized Salesforce applications using declarative tools and Apex scripting to automate workflows and improve operational efficiency.</li>
+      <li>Implemented third-party API integrations to enhance business functionality and streamline enterprise-level processes.</li>
+      <li>Collaborated on optimizing data synchronization pipelines for improved system reliability and performance.</li>
+    </ul>
+  </div>
+  <!-- Indo Euro Synchronization -->
+  <div class="experience-entry">
+    <h3>Data Science Cluster Intern</h3>
+    <p><em>Indo Euro Synchronization (Remote, International) (Feb 2023 – Apr 2023)</em></p>
+    <ul>
+      <li>Executed AI-driven data analytics projects involving data visualization and SQL-based reporting using Tableau and Power BI.</li>
+      <li>Performed large-scale data wrangling and preprocessing to ensure clean, normalized datasets for machine learning pipelines.</li>
+      <li>Enhanced predictive accuracy through feature engineering, correlation analysis, and automated data transformation workflows.</li>
+    </ul>
+  </div>
+
+</div>
+
+
+
+   <!-- Education -->
+<div class="card" id="education">
+  <h2>Education</h2>
+  <div class="edu-grid">
+    
+    <div class="edu-card">
+      <img src="uf.jpeg" alt="University of Florida">
+      <div class="edu-content">
+        <h3>University of Florida</h3>
+        <p>Master of Science – Applied Data Science</p>
+        <p><b>CGPA:</b> 4.0 / 4.0</p>
+        <div class="edu-details">
+          <span>📅 Aug 2024 – May 2026</span>
+          <span>📍 Gainesville, Florida</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="edu-card">
+      <img src="vvit.jpeg" alt="Vasireddy Venkatadri Institute of Technology">
+      <div class="edu-content">
+        <h3>Vasireddy Venkatadri Institute of Technology</h3>
+        <p>B.Tech – Artificial Intelligence & Machine Learning</p>
+        <p><b>CGPA:</b> 8.87 / 10</p>
+        <div class="edu-details">
+          <span>📅 May 2020 – Apr 2024</span>
+          <span>📍 Guntur, India</span>
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- closes .edu-grid -->
+</div> <!-- closes .card -->
+
+   <!-- Projects -->
+<div class="card" id="projects">
+  <h2>Projects</h2>
+
+  <!-- Growz -->
+  <div class="project-entry">
+    <div class="project-header">
+      <h3>Growz – AI-Based Crop Recommendation & Disease Detection App</h3>
+      <span class="tag">97% crop accuracy</span>
+      <span class="tag">98% disease accuracy</span>
+    </div>
+    <p>
+      Designed an AI-powered Android application integrating K-Means clustering, Decision Tree, and Conv2D-based deep learning 
+      to help farmers make informed agricultural decisions. The system recommends optimal crops based on soil conditions, 
+      predicts suitable fertilizers, and detects plant diseases using TensorFlow Lite for on-device inference. 
+      It also provides market demand analysis and seasonal insights through a Firebase-connected database, 
+      enabling data-driven decision-making even in low-connectivity rural areas.
+    </p>
+    <div class="tech-tags">
+      <span class="badge">Android</span>
+      <span class="badge">TensorFlow Lite</span>
+      <span class="badge">K-Means</span>
+      <span class="badge">Decision Tree</span>
+      <span class="badge">Conv2D</span>
+      <span class="badge">Firebase</span>
+    </div>
+  </div>
+
+  <!-- MNIST Digit Classifier -->
+  <div class="project-entry">
+    <div class="project-header">
+      <h3>MNIST Digit Classifier – From Classical ML to Deep Learning Deployment</h3>
+      <span class="tag">98.67% SVC accuracy</span>
+      <span class="tag">98.31% ANN accuracy</span>
+    </div>
+    <p>
+      Built an end-to-end machine learning pipeline using the MNIST dataset of 70,000 handwritten digits. 
+      Trained SVC, Random Forest, and Logistic Regression models using GridSearchCV for hyperparameter tuning. 
+      Applied PCA to retain 90% variance and reduce computation time. 
+      Developed an artificial neural network with two hidden layers, ReLU activation, and dropout regularization using Keras. 
+      Deployed the model with Gradio, creating an interactive web interface where users can draw digits and receive real-time predictions.
+    </p>
+    <div class="tech-tags">
+      <span class="badge">Scikit-learn</span>
+      <span class="badge">Keras</span>
+      <span class="badge">PCA</span>
+      <span class="badge">Isomap</span>
+      <span class="badge">Gradio</span>
+    </div>
+  </div>
+
+  <!-- Health Query & Diagnosis Recommender -->
+  <div class="project-entry">
+    <div class="project-header">
+      <h3>Health Query & Diagnosis Recommender System</h3>
+      <span class="tag">AUC = 1.00</span>
+      <span class="tag">99.8% accuracy</span>
+    </div>
+    <p>
+      Developed an AI-powered health chatbot using Streamlit that collects user symptoms and predicts possible diseases 
+      from multiple integrated datasets covering cardiovascular and stroke risk indicators. 
+      Implemented data cleaning, outlier handling, and feature engineering (BMI–Age interaction, glucose binning). 
+      Applied PCA to retain 95% variance and trained multiple models, selecting a Random Forest classifier 
+      with top performance. Added automatic diagnostic report generation via fpdf and deployed the chatbot for real-time use.
+    </p>
+    <div class="tech-tags">
+      <span class="badge">Python</span>
+      <span class="badge">Streamlit</span>
+      <span class="badge">Random Forest</span>
+      <span class="badge">PCA</span>
+      <span class="badge">fpdf</span>
+    </div>
+  </div>
+
+  <!-- Air Quality Index App -->
+  <div class="project-entry">
+    <div class="project-header">
+      <h3>Air Quality Index App</h3>
+      <span class="tag">Live data tracking</span>
+    </div>
+    <p>
+      Created an Android app that measures air quality based on live location data using an online REST API. 
+      The app retrieves real-time environmental parameters such as SO₂, CO₂, and PM2.5 
+      and classifies air quality levels into Good, Fair, or Poor. Integrated Google Maps API 
+      for geolocation tracking and visual air quality mapping, offering a simple and accessible user interface 
+      for environmental monitoring.
+    </p>
+    <div class="tech-tags">
+      <span class="badge">Android</span>
+      <span class="badge">Java</span>
+      <span class="badge">Google Maps API</span>
+      <span class="badge">REST API</span>
+    </div>
+  </div>
+
+  <!-- T20 World Cup Analytics -->
+  <div class="project-entry">
+    <div class="project-header">
+      <h3>T20 World Cup Cricket Data Analytics</h3>
+      <span class="tag">1st Prize Winner</span>
+    </div>
+    <p>
+      Performed end-to-end data analytics on the T20 World Cup 2022 dataset to identify top-performing players 
+      for a Dream11 team. Used Bright Data for web scraping from ESPNcricinfo and performed data cleaning and 
+      transformation using Python and Power Query. Built interactive Power BI dashboards with DAX to 
+      visualize batting and bowling insights. Presented findings to a cricket analytics event and secured 
+      the first prize for actionable data storytelling.
+    </p>
+    <div class="tech-tags">
+      <span class="badge">Python</span>
+      <span class="badge">Power BI</span>
+      <span class="badge">Web Scraping</span>
+      <span class="badge">Data Visualization</span>
+    </div>
+  </div>
+
+  <!-- CT Kidney Scan Dataset Classification -->
+  <div class="project-entry">
+    <div class="project-header">
+      <h3>CT Kidney Scan Dataset Classification</h3>
+      <span class="tag">45% loss reduced</span>
+    </div>
+    <p>
+      Addressed severe class imbalance in kidney CT scan classification using SMOTE and applied dropout and 
+      optimization algorithms to prevent overfitting. Designed a CNN model in TensorFlow that achieved improved 
+      accuracy and reduced validation loss by 45%. Focused on improving generalization and efficient model convergence.
+    </p>
+    <div class="tech-tags">
+      <span class="badge">TensorFlow</span>
+      <span class="badge">CNN</span>
+      <span class="badge">SMOTE</span>
+      <span class="badge">Optimization</span>
+    </div>
+  </div>
+
+  <!-- CIFAR-100 Classifier -->
+  <div class="project-entry">
+    <div class="project-header">
+      <h3>CIFAR-100 Image Classification</h3>
+      <span class="tag">87% accuracy</span>
+    </div>
+    <p>
+      Developed a deep learning model using CNNs to classify images from the CIFAR-100 dataset. 
+      Applied data augmentation, batch normalization, and hyperparameter tuning to achieve 
+      87% test accuracy. Focused on improving generalization across 10 object categories 
+      with reduced overfitting.
+    </p>
+    <div class="tech-tags">
+      <span class="badge">Deep Learning</span>
+      <span class="badge">CNN</span>
+      <span class="badge">Python</span>
+    </div>
+  </div>
+
+  <!-- Sentiment Analysis -->
+  <div class="project-entry">
+    <div class="project-header">
+      <h3>Sentiment Analysis on IMDB Reviews</h3>
+      <span class="tag">86% accuracy</span>
+    </div>
+    <p>
+      Built an NLP pipeline using TensorFlow and LSTM networks to classify IMDB movie reviews as positive or negative. 
+      Applied transfer learning with pre-trained embeddings, achieving 86% accuracy and 0.32 loss. 
+      Optimized tokenization, padding, and sequence length for better sentiment classification. 
+      Enhanced interpretability through confusion matrix and word embedding visualizations.
+    </p>
+    <div class="tech-tags">
+      <span class="badge">TensorFlow</span>
+      <span class="badge">LSTM</span>
+      <span class="badge">Transfer Learning</span>
+      <span class="badge">NLP</span>
+    </div>
+  </div>
+</div>
+
+ 
+
+    <!-- Certifications -->
+<section class="card" id="certifications">
+  <h2>Certifications</h2>
+  <ul class="cert-list">
+    <li>
+      <span class="cert-name">Azure AI Engineer Associate - Microsoft</span>
+      <span class="cert-date">(Mar 2023)</span>
+      <a href="https://drive.google.com/file/d/1s2He2itmVV_Ulbl4jfAz3d_JbSAkmG3X/view?usp=sharing" target="_blank" class="cert-btn">View</a>
+    </li>
+    <li>
+      <span class="cert-name">Azure AI Fundamentals - Microsoft</span>
+      <span class="cert-date">(Mar 2023)</span>
+      <a href="https://drive.google.com/file/d/1MW17rUgCAHgd7lTZ830Si9tVxHP_oGmx/view?usp=sharing" target="_blank" class="cert-btn">View</a>
+    </li>
+    <li>
+      <span class="cert-name">The Joy of Computing Using Python - NPTEL</span>
+      <span class="cert-date">(Oct 2022)</span>
+      <a href="https://drive.google.com/file/d/1DgZ-wTJ_OEBlp0XeHOpW5roHlJcYy0iY/view?usp=sharing" target="_blank" class="cert-btn">View</a>
+    </li>
+    <li>
+      <span class="cert-name">Salesforce Developer Virtual Internship - Salesforce</span>
+      <span class="cert-date">(May 2023)</span>
+      <a href="https://drive.google.com/file/d/12__U8L6gEgLNZint7cs19w5cwhWxvw7m/view?usp=sharing" target="_blank" class="cert-btn">View</a>
+    </li>
+    <li>
+      <span class="cert-name">Introduction to Java - Sololearn</span>
+      <span class="cert-date">(Mar 2023)</span>
+      <a href="https://drive.google.com/file/d/1GNSBVpENPYlTrmWRcOKaeDICKjIIYNh7/view?usp=sharing" target="_blank" class="cert-btn">View</a>
+    </li>
+    <li>
+      <span class="cert-name">AI and Mobile Robotics – German Varsity</span>
+      <span class="cert-date">(Jan 2024)</span>
+      <a href="https://drive.google.com/file/d/193i2mjSZSA6LF_jql7TQUTckeh-SaRGC/view?usp=sharing" target="_blank" class="cert-btn">View</a>
+    </li>
+    <li>
+      <span class="cert-name">Power BI – SkillUP</span>
+      <span class="cert-date">(Jan 2025)</span>
+      <a href="https://drive.google.com/file/d/1gjfoQqZArgAvAu1Ni-MAmPhswGLUvbZM/view?usp=sharing" target="_blank" class="cert-btn">View</a>
+    </li>
+    <li>
+      <span class="cert-name">Cloud & DevOps - Epam</span>
+      <span class="cert-date">(Feb 2023)</span>
+      <a href="https://drive.google.com/file/d/1KvH7sDSsdK9qQ1eNjKLi6yxe3GeYn2cI/view?usp=sharing" target="_blank" class="cert-btn">View</a>
+    </li>
+    <li>
+      <span class="cert-name">Data Science Machine Learning, AI - Datavalley</span>
+      <span class="cert-date">(Apr 2024)</span>
+      <a href="https://drive.google.com/file/d/1kqDJ5JLXQZYTD_k76oUB65qyaU8Jn5K1/view?usp=sharing" target="_blank" class="cert-btn">View</a>
+    </li>
+    <li>
+      <span class="cert-name">Cybersecurity Virtual Internship - Paloalto</span>
+      <span class="cert-date">(Feb 2023)</span>
+      <a href="https://drive.google.com/file/d/1mlva4BkW9gKYLb6NV3I0cLo3EDJZ_GcO/view?usp=sharing" target="_blank" class="cert-btn">View</a>
+    </li>
+    <li>
+      <span class="cert-name">AWS Academy Cloud Developing - AWS</span>
+      <span class="cert-date">(Feb 2023)</span>
+      <a href="https://drive.google.com/file/d/1-GnCrMiJZodThGsQUPRvb3b-SriB-IGs/view?usp=sharing" target="_blank" class="cert-btn">View</a>
+    </li>
+    <li>
+      <span class="cert-name">AWS Academy Cloud Architecting - AWS</span>
+      <span class="cert-date">(Feb 2023)</span>
+      <a href="https://drive.google.com/file/d/1WaXlIt0I4QxQtzLmVeSPpcwsmEWNGpZn/view?usp=sharing" target="_blank" class="cert-btn">View</a>
+    </li>
+    <li>
+      <span class="cert-name">AWS Academy Cloud Operations - AWS</span>
+      <span class="cert-date">(Feb 2023)</span>
+      <a href="https://drive.google.com/file/d/1Th2-5YV6JEP8JhpxifU8ApgUpV7G6QYV/view?usp=sharing" target="_blank" class="cert-btn">View</a>
+    </li>
+    <li>
+      <span class="cert-name">AI-ML Virtual Internship - AWS</span>
+      <span class="cert-date">(May 2022)</span>
+      <a href="https://drive.google.com/file/d/1CC39YkEgq1MoONEjjCgizLGCyLecaeor/view?usp=sharing" target="_blank" class="cert-btn">View</a>
+    </li>
+    <li>
+      <span class="cert-name">AI for Everyone - Coursera</span>
+      <span class="cert-date">(Aug 2022)</span>
+      <a href="https://drive.google.com/file/d/1O-ZTh8ET8xKKyoMphIRdUPMrC9i5A73i/view?usp=sharing" target="_blank" class="cert-btn">View</a>
+    </li>
+    <li>
+      <span class="cert-name">Network Security Associate Virtual Internship - Fortinet</span>
+      <span class="cert-date">(Jul 2023)</span>
+      <a href="https://drive.google.com/file/d/1DQWvE9uOpvdJM832m9VDCrFj_N6e1n5I/view?usp=sharing" target="_blank" class="cert-btn">View</a>
+    </li>
+    <li>
+      <span class="cert-name">Front End Development - Edunet</span>
+      <span class="cert-date">(Jul 2023)</span>
+      <a href="https://drive.google.com/file/d/18LEIUUbIRP6CqYPc_27FzH7D93IMPv08/view?usp=sharing" target="_blank" class="cert-btn">View</a>
+    </li>
+    <li>
+      <span class="cert-name">App Development - Bharat Intern</span>
+      <span class="cert-date">(Oct 2023)</span>
+      <a href="https://drive.google.com/file/d/1YuNcKQKzPG9jcwNXCp8eN8rmxMy8vC9a/view?usp=sharing" target="_blank" class="cert-btn">View</a>
+    </li>
+  </ul>
+</section>
+
+
+
+
+<!-- Skills -->
+<div class="card" id="skills">
+  <h2>Technical Skills</h2>
+
+  <div class="skills-container">
+
+    <!-- Programming Languages -->
+    <div class="skill-category">
+      <h3>💻 Programming Languages</h3>
+      <div class="skill-bar"><span>Python</span><div class="bar"><div class="fill" style="--level: 92%;"></div></div></div>
+      <div class="skill-bar"><span>Java</span><div class="bar"><div class="fill" style="--level: 85%;"></div></div></div>
+      <div class="skill-bar"><span>C</span><div class="bar"><div class="fill" style="--level: 75%;"></div></div></div>
+      <div class="skill-bar"><span>SQL</span><div class="bar"><div class="fill" style="--level: 88%;"></div></div></div>
+      <div class="skill-bar"><span>R</span><div class="bar"><div class="fill" style="--level: 80%;"></div></div></div>
+    </div>
+
+    <!-- Frameworks & Libraries -->
+    <div class="skill-category">
+      <h3>🧠 Frameworks & Libraries</h3>
+      <div class="badge">NumPy</div>
+      <div class="badge">Pandas</div>
+      <div class="badge">Matplotlib</div>
+      <div class="badge">Seaborn</div>
+      <div class="badge">TensorFlow</div>
+      <div class="badge">Keras</div>
+      <div class="badge">PyTorch</div>
+      <div class="badge">Transformers</div>
+      <div class="badge">Hugging Face</div>
+      <div class="badge">OpenCV</div>
+      <div class="badge">Scikit-learn</div>
+      <div class="badge">NLTK</div>
+    </div>
+
+    <!-- Tools & Technologies -->
+    <div class="skill-category">
+      <h3>☁️ Tools & Technologies</h3>
+      <div class="badge">Azure ML</div>
+      <div class="badge">Azure</div>
+      <div class="badge">Git</div>
+      <div class="badge">Linux</div>
+      <div class="badge">Power BI</div>
+      <div class="badge">Tableau</div>
+      <div class="badge">LangChain</div>
+      <div class="badge">LangGraph</div>
+    </div>
+
+    <!-- Mathematics for ML -->
+    <div class="skill-category">
+      <h3>📘 Mathematics for Machine Learning</h3>
+      <ul>
+        <li>Linear Algebra</li>
+        <li>Probability</li>
+        <li>Statistics</li>
+        <li>Calculus</li>
+      </ul>
+    </div>
+
+    <!-- Soft Skills -->
+    <div class="skill-category">
+      <h3>🌟 Soft Skills</h3>
+      <ul>
+        <li>Leadership & Team Collaboration</li>
+        <li>Time Management</li>
+        <li>Adaptability</li>
+        <li>Teamwork</li>
+        <li>Public Speaking</li>
+      </ul>
+    </div>
+
+    <!-- Interests -->
+    <div class="skill-category">
+      <h3>🎯 Interests</h3>
+      <ul>
+        <li>Artificial Intelligence</li>
+        <li>Machine Learning</li>
+        <li>AI Agents & Deep Learning</li>
+        <li>Data Visualization</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== CONTACT SECTION ===== -->
+<div class="card contact-card" id="contact">
+  <h2>Get in Touch</h2>
+  <p class="contact-intro">
+    I'm always open to collaboration, data-driven discussions, or exciting opportunities in AI, Data Science, or Machine Learning.
+  </p>
+
+  <div class="contact-boxes">
+    <div class="contact-box">
+      <span class="contact-icon">📍</span>
+      <p><strong>Location:</strong><br>Gainesville, Florida, USA</p>
+    </div>
+
+    <div class="contact-box">
+      <span class="contact-icon">📧</span>
+      <p><strong>Email:</strong><br><a href="mailto:mvjpriya@gmail.com">mvjpriya@gmail.com</a></p>
+    </div>
+
+    <div class="contact-box">
+      <span class="contact-icon">📱</span>
+      <p><strong>Phone:</strong><br>+1 (352) 776-6402</p>
+    </div>
+  </div>
+
+  <div class="contact-links">
+    <a href="https://linkedin.com/in/venkata-jyothi-priya-mulaka-7b4022218" target="_blank" class="contact-btn linkedin">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"> LinkedIn
+    </a>
+    <a href="https://github.com/MVJyothiPriya" target="_blank" class="contact-btn github">
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"> GitHub
+    </a>
+    <a href="mailto:mvjpriya@gmail.com" class="contact-btn email">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email"> Email Me
+    </a>
+  </div>
+
+  <footer class="contact-footer">
+    <p>© 2025 Venkata Jyothi Priya Mulaka | All Rights Reserved</p>
+  </footer>
+</div>
+
+
+
+
+  <script>
+
+    // Smooth scroll
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+</body>
+</html>
