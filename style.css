@@ -702,4 +702,101 @@ footer {
   margin-top: 10px;
 }
 
+/* ===== PUBLICATIONS SECTION (Enhanced Design) ===== */
+.pub-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
 
+.pub-card {
+  background: #f5faff;
+  border-left: 4px solid #0078D7;
+  border-radius: 15px;
+  padding: 25px 22px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pub-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 120, 215, 0.15);
+}
+
+.pub-card h3 {
+  color: #0078D7;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.pub-sub {
+  color: #555;
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.pub-desc {
+  color: #333;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.pub-link {
+  display: inline-block;
+  background: linear-gradient(90deg, #0078D7, #00aaff);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.pub-link:hover {
+  background: linear-gradient(90deg, #005bb5, #0088cc);
+  transform: translateY(-2px);
+}
+
+/* ===== EXTRACURRICULAR SECTION ===== */
+.extra-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.extra-item {
+  background: #f5faff;
+  border-left: 4px solid #0078D7;
+  border-radius: 10px;
+  padding: 15px 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.extra-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  background: #e8f1ff;
+}
+
+.extra-icon {
+  font-size: 22px;
+  color: #0078D7;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.extra-item p {
+  color: #333;
+  font-size: 15px;
+  line-height: 1.6;
+}
